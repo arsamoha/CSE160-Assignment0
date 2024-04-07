@@ -102,7 +102,7 @@ function angleBetween(v1, v2) {
 
 function areaTriangle(v1, v2) {
   var a = Vector3.cross(v1, v2);
-  var v1 = new Vector3([a[0], a[1], a[2]]);
+  var v1 = new Vector3([a.elements[0], a.elements[1], a.elements[2]]);
 
   var b = v1.magnitude() / 2;
 
